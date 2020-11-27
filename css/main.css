@@ -1,0 +1,184 @@
+body{
+	font-size:16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}
+
+*,*::before, *::after{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+img{
+	max-width: 100%;
+}
+
+/*--egész--*/
+	body{
+	display:grid;
+	grid-template-areas: 
+		"fejlec"
+		"foresz"
+		"lablec"
+		;
+	grid-template-rows: max-content 1fr max-content;
+	min-height:100vh;
+	}
+	header{
+	background-color:darkkhaki;
+	grid-area: fejlec;
+	}
+	main{
+	background-color:khaki;
+	grid-area: foresz;
+	}
+	footer{
+	background:darkkhaki;
+	grid-area: lablec;
+	}
+	a{
+		text-decoration:none;
+		color: black;
+	}
+/*--egész_vége--*/
+
+/*--fejléc--*/
+	.gomb{
+		border:2px solid black;
+		background-color:khaki;
+		display:inline-block;
+		padding:.5rem 1rem;
+		margin:.5rem .5rem;
+		border-radius:1rem;
+		transition: .3s;
+		font-weight:700;
+		user-select:none;
+	}
+	.gomb:hover{
+		cursor:pointer;
+		background-color:lightgray;
+	}
+	.gomb_jobbra{
+		float:right;
+	}
+/*--fejléc_vége--*/
+
+/*--lábléc--*/
+	.eler{
+		font-weight:700;
+		padding:0 1rem;
+		margin:.5rem .5rem;
+	}
+	.telefon{
+		padding:0 2rem;
+		margin:.5rem .5rem;
+	}
+	.email{
+		padding:0 2rem;
+		margin:.5rem .5rem;
+	}
+/*--lábléc_vége--*/
+
+/*--főrész1--*/
+	.bemutatkozas{
+		padding:0 1rem;
+		margin:.5rem .5rem;	
+		float:left;
+	}
+	.bemutatkozas_kep1{
+		max-height:20rem;
+		padding:0rem 0rem 0rem 1rem;
+		margin:0rem 0rem .5rem .5rem;
+		float:right;
+		display:inline-block;
+	}
+	.motivacio{
+		margin:2rem 0rem 0rem 0rem;	
+	}
+/*--főrész1_vége--*/
+
+/*--főrész2--*/
+	.tanulmanyaim{
+		border:2px solid darkkhaki;
+		padding:.5rem 1rem;
+		margin:.5rem .5rem;
+		border-radius:0.5rem;
+	}
+	.tanulmanyaim img{
+		max-height:5rem;
+		display:inline-block;
+		margin:5px auto;
+	}
+	.kompetenciak{
+		border:2px solid darkkhaki;
+		padding:.5rem 1rem;
+		margin:.5rem .5rem;
+		border-radius:0.5rem;
+	}
+	.nyelvvizsga{
+		padding:0rem 0rem .5rem 1rem;
+		margin:0rem 0rem .5rem .5rem;
+	}
+	.szamitogep{
+		padding:0rem 0rem .5rem 1rem;
+		margin:0rem 0rem .5rem .5rem;
+	}
+	.egyeb{
+		border:2px solid darkkhaki;
+		padding:.5rem 1rem;
+		margin:.5rem .5rem;
+		border-radius:0.5rem;
+		
+	}
+	.egyeb img{
+		max-height:15rem;
+		display:inline-block;
+		margin:5px auto;
+	}
+	.egyeb_kepek{
+		display:grid;
+		grid-template-columns: 1fr max-content 1fr;
+	}
+/*--főrész2_vége--*/
+
+/*--főrész3--*/
+	.szakmai{
+		border:2px solid darkkhaki;
+		padding:.5rem 1rem;
+		margin:.5rem .5rem;
+		border-radius:0.5rem;
+		display:inline-block;
+	}
+	.szakmai img{
+		max-height:10rem;
+		padding:0rem 0rem 0rem 1rem;
+		margin:0rem 0rem .5rem .5rem;
+		float:right;
+		display:inline-block;
+	}	
+/*--főrész3_vége--*/
+
+/*--főrész4--*/
+	.leiras{
+		padding:0rem 1rem;
+		margin:.5rem .5rem;
+	}
+	.leiras img{
+		max-height:15rem;
+		display:inline-block;
+		margin:5px auto;
+	}
+	.koncepcio{
+		padding:0rem 0rem .5rem 0rem;
+		margin:0rem 0rem .5rem 0rem;
+	}
+	.nehezsegek{
+		padding:0rem 0rem .5rem 1rem;
+		margin:0rem 0rem .5rem .5rem;
+	}
+	.linkek{
+		padding:0rem 0rem 0rem 1rem;
+		margin:0rem 0rem 0rem .5rem;
+	}
+/*--főrész4_vége--*/
+
